@@ -1,20 +1,27 @@
-<h3>Simple React web App for cryptocurrencies live exchange rate and simple CRUD functionality for contract</h3>
+<h4>Simple React web App for cryptocurrencies live exchange rate and simple CRUD functionality for contract</h4>
 
 ## <h4>Pre-Request</h4>
+------------------------------------
+1. Install Node Server
+   Follow the steps https://nodejs.org/en/
 
-#Install Node Server
-Follow the steps https://nodejs.org/en/
+2. Install JSON Server
+   ### `npm install -g json-server`
 
-#Install JSON Server
+--------------------------------------
 
-## ###npm install -g json-server
-
----
-
-<h3> Setup Application in your Local Machine<h3>
+<h4> Setup Application in your Local Machine<h4>
+  
 Step 1 :  clone the repository in you local machine
-Step 2 : ### `npm start`
-Step 3 : ### sudo json-server --watch db.json --port 3004
+
+Step 2 :  Start the server
+       
+  ### `npm start`
+          
+Step 3 : Start the Json Server
+
+  ### `sudo json-server --watch db.json --port 3004`
+        
 
 ## Available Scripts
 
