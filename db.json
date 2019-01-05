@@ -1,0 +1,34 @@
+{
+  "contracts": [
+    {
+      "id": "1",
+      "user": {
+        "name": "Gary",
+        "surname": "M"
+      },
+      "amountInUsd": "12000",
+      "currency": "USD",
+      "date": "6-Jan-2019"
+    },
+    {
+      "id": "2",
+      "user": {
+        "name": "Max",
+        "surname": "Well"
+      },
+      "amountInUsd": "9000",
+      "currency": "USD",
+      "date": "4-Jan-2019"
+    },
+    {
+      "id": "3",
+      "user": {
+        "name": "Larry",
+        "surname": "Ford"
+      },
+      "amountInUsd": "3000",
+      "currency": "USD",
+      "date": "2-Jan-2019"
+    }
+  ]
+}

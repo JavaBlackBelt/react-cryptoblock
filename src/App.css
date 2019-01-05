@@ -1,32 +1,111 @@
 .App {
-  text-align: center;
+  text-align: left;
 }
 
 .App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
+  height: 10vmin;
+  backface-visibility: visible;
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
+  background-color: #5a4a6b;
+  min-height: 8vh;
+  display: block;
   flex-direction: column;
-  align-items: center;
+  align-items: left;
+  justify-content: left;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-chart {
+  position: left;
+  margin: 0%;
+  text-align: left;
+  display: block;
+  flex-direction: column;
+  text-align: left;
+  justify-content: left;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+.App-footer {
+  background-color: #29332f;
+  min-height: 10vh;
+  position: relative;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  display: block;
+  flex-direction: row;
+  text-align: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.App-contract {
+  text-align: right;
+  flex-direction: right;
+  display: block;
+  text-align: left;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.App-row {
+  text-align: right;
+  flex-direction: right;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  font-size: calc(3px + 2vmin);
+  color: rgb(14, 10, 10);
+}
+.App-col {
+  text-align: right;
+  flex-direction: right;
+  display: flex;
+  text-align: left;
+  justify-content: center;
+  font-size: calc(2px + 2vmin);
+  color: rgb(165, 144, 22);
+}
+.rwd-table {
+  margin: 1em 0;
+  min-width: 300px;
+  position: relative;
+  margin-top: 0%;
+  height: 100%;
+}
+.App-btn {
+  padding: 3px 6px;
+  position: right;
+  border: 1 none;
+  font-weight: 100;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+  position: left;
+}
+.modal-container {
+  position: relative;
+}
+.modal-container .modal,
+.modal-container .modal-backdrop {
+  position: absolute;
+}
+.modalStyle {
+  background: "#fff";
+  border: 5;
+  width: 500;
+  height: 300;
+  margin: "0 auto";
+  padding: 30;
+  position: "relative";
+}
+
+.modelfooterStyle {
+  position: "absolute";
 }
