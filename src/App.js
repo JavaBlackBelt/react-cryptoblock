@@ -3,7 +3,6 @@ import "bootstrap/dist/css/bootstrap.css";
 import LiveChart from "./components/LiveChart";
 import { Table } from "react-bootstrap";
 import { Button } from "react-bootstrap";
-import ContractForm from "./components/ContractForm";
 import Model from "./model/Model";
 import logo from "./cryptoBlock.png";
 import "./App.css";
@@ -31,7 +30,7 @@ class App extends Component {
 
   deleteContract(id) {
     this.setState({
-      contracts: this.state.contracts.filter(contracts => contracts.id != id)
+      contracts: this.state.contracts.filter(contracts => contracts.id !== id)
     });
   }
   updateContract() {}
@@ -39,10 +38,11 @@ class App extends Component {
   showModel = () => {
     this.setState = { ...this.state, show: !this.state.show };
   };
+
   render() {
     var { isloaded, contracts } = this.state;
     if (!isloaded) {
-      return <div>"Loading..."</div>;
+      return <div>Loading...</div>;
     } else {
       return (
         <div className="App">
@@ -58,17 +58,16 @@ class App extends Component {
                 <contractStyle className="App-contract">
                   <p>
                     Latest Contracts
-                    <Button bsStyle="success" bsSize="xsmall">
+                    <button
+                      type="button"
+                      class="btn btn-success"
+                      data-toggle="modal"
+                      data-target="#contractModal"
+                    >
                       Create Contract
-                    </Button>
+                    </button>
                   </p>
                 </contractStyle>
-                {/* <input
-                  type="button"
-                  onClick={this.shoModel}
-                  value="Create Contract"
-                />
-                <Model show={this.state.show}>"Hello Model"</Model> */}
                 <Table striped responsive>
                   <rowStyle className="App-row">
                     <thead>

@@ -11,13 +11,34 @@ class ContractForm extends Component {
             <label>Owner</label>
             <input
               type="text"
-              ref="First Name"
+              placeholder="First Name"
               onChange={this.onChange}
               className="form-control"
             />
             <input
               type="text"
-              ref="First Name"
+              placeholder="SurName"
+              onChange={this.onChange}
+              className="form-control"
+            />
+            <label>Amount</label>
+            <input
+              type="text"
+              placeholder="Amount in USD"
+              onChange={this.onChange}
+              className="form-control"
+            />
+            <label>Currency</label>
+            <input
+              type="text"
+              placeholder="USD"
+              onChange={this.onChange}
+              className="form-control"
+            />
+            <label>Date</label>
+            <input
+              type="date"
+              placeholder="Date"
               onChange={this.onChange}
               className="form-control"
             />
