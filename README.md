@@ -1,5 +1,7 @@
 <h4>Simple React web App for cryptocurrencies live exchange rate and simple CRUD functionality for contract</h4>
 
+<img src="src/cryptoBlock.png" width="400" hirght="100">
+
 ## <h4>Pre-Request</h4>
 ------------------------------------
 1. Install Node Server
